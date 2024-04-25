@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Suhu - Bagas Bimantoro</title>
+    <!-- css source -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- box icons -->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+      <!-- style huruf -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="temperature-converter">
+
+            <h1 class="title">Kalkulator Suhu</h1>
+
+            <div class="result">
+              <span class="result-heading">Hasil</span>
+              <h2 class="convert-result" id="convert-result"></h2>
+            </div>
+
+            <!-- input -->
+            <div class="degree-type">
+                <!-- suhu awal -->
+              <div class="degree-field">
+                <label for="degree">Suhu</label>
+                <input type="number" name="degree" id="degree" />
+              </div>
+
+              <!-- opsi pilihan suhu -->
+              <div class="temp-field">
+                <label for="temp-type">Tipe</label>
+                <select name="temperatures" id="temp-type" autocomplete="on">
+                  <option id="celcius" value="celcius">Celcius</option>
+                  <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+                </select>
+              </div>
+            </div>
+            <button id="convert-btn">Konversi</button>
+
+            <!--Keterangan Rumus-->
+            <div class="equation">
+              <span class="result-equation">Keterangan</span>
+              <div class="equation-detail">Suhu (&deg;F) = (Suhu (&deg;C) * 1.8) + 32</div>
+              <div class="equation-detail">atau</div>
+              <div class="equation-detail">Suhu (&deg;F) = (Suhu (&deg;C) * 9/5) + 32</div>
+            </div>
+            
+        </div>
+      </div>
+    <!-- script source -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
